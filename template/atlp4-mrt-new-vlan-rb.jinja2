@@ -1,0 +1,413 @@
+xtgap4mrt01 
+----------- 
+conf t 
+! 
+int po112 
+switchport trunk allowed vlan remove {{ vlan_id }} 
+! 
+int po122 
+switchport trunk allowed vlan remove {{ vlan_id }} 
+! 
+int po132 
+switchport trunk allowed vlan remove {{ vlan_id }} 
+!	
+int po142 
+switchport trunk allowed vlan remove {{ vlan_id }}
+! 
+int po152 
+switchport trunk allowed vlan remove {{ vlan_id }} 
+! 
+int po221 
+switchport trunk allowed vlan remove {{ vlan_id }} 
+! 
+int po222 
+switchport trunk allowed vlan remove {{ vlan_id }} 
+! 
+no vlan {{ vlan_id }} 
+! 
+no interface {{ vlan_id }} 
+! 
+end 
+wr 
+
+xtgap4mrt02 
+----------- 
+
+conf t 
+! 
+int po112 
+switchport trunk allowed vlan remove {{ vlan_id }} 
+! 
+int po122 
+switchport trunk allowed vlan remove {{ vlan_id }}
+! 
+int po132 
+switchport trunk allowed vlan remove {{ vlan_id }} 
+!	
+int po142 
+switchport trunk allowed vlan remove {{ vlan_id }} 
+! 
+int po152 
+switchport trunk allowed vlan remove {{ vlan_id }} 
+! 
+int po221 
+switchport trunk allowed vlan remove {{ vlan_id }}
+! 
+int po222 
+switchport trunk allowed vlan remove {{ vlan_id }} 
+! 
+no vlan {{ vlan_id }} 
+! 
+no interface {{ vlan_id }} 
+! 
+end 
+wr 
+
+atl1p04r11ds01 / 02 
+-------------------- 
+
+conf t 
+! 
+int po110 
+switchport trunk allowed vlan remove {{ vlan_id }}
+! 
+int po112 
+switchport trunk allowed vlan remove {{ vlan_id }} 
+! 
+int po513 
+switchport trunk allowed vlan remove {{ vlan_id }} 
+! 
+int po517 
+switchport trunk allowed vlan remove {{ vlan_id }} 
+! 
+int po521 
+switchport trunk allowed vlan remove {{ vlan_id }}
+! 
+int po610 - 613 
+switchport trunk allowed vlan remove {{ vlan_id }} 
+! 
+no vlan {{ vlan_id }} 
+! 
+end 
+wr 
+
+atl1p04r11se01 
+--------------- 
+
+conf t 
+! 
+no vlan {{ vlan_id }} 
+! 
+end 
+wr 
+
+atl1p04q11ds01 / 02 
+------------------- 
+
+conf t 
+! 
+int po110 
+switchport trunk allowed vlan remove {{ vlan_id }}
+! 
+int po122 
+switchport trunk allowed vlan remove {{ vlan_id }} 
+! 
+int po500 
+switchport trunk allowed vlan remove {{ vlan_id }} 
+! 
+int po513 - 521 
+switchport trunk allowed vlan remove {{ vlan_id }} 
+! 
+no vlan {{ vlan_id }}
+! 
+end 
+wr 
+
+atl1p04q11se01 
+--------------- 
+
+conf t 
+! 
+no vlan {{ vlan_id }} 
+! 
+end 
+wr 
+
+atl1p04p11ds01 / 02 
+------------------- 
+
+conf t 
+! 
+int po110 
+switchport trunk allowed vlan remove {{ vlan_id }} 
+! 
+int po132 
+switchport trunk allowed vlan remove {{ vlan_id }} 
+! 
+int po520 
+switchport trunk allowed vlan remove {{ vlan_id }} 
+! 
+no vlan {{ vlan_id }} 
+! 
+end 
+wr 
+
+atl1p04p11se01 
+--------------- 
+
+conf t 
+! 
+no vlan {{ vlan_id }} 
+! 
+end 
+wr 
+
+atl1p04p21se01 / 02 
+-------------------- 
+
+conf t 
+! 
+no vlan {{ vlan_id }} 
+! 
+end 
+wr 
+
+atl1p04n11ds01 / 02 
+------------------- 
+
+conf t 
+! 
+int po12 
+switchport trunk allowed vlan remove {{ vlan_id }} 
+! 
+int po31 
+switchport trunk allowed vlan remove {{ vlan_id }} 
+! 
+int po110 
+switchport trunk allowed vlan remove {{ vlan_id }} 
+! 
+int po142 
+switchport trunk allowed vlan remove {{ vlan_id }} 
+! 
+no vlan {{ vlan_id }} 
+! 
+end 
+wr 
+
+atl1p04n11se01 
+--------------- 
+
+conf t 
+! 
+no vlan {{ vlan_id }} 
+! 
+end 
+wr 
+
+atl1p04n13se01 / 02 
+--------------- 
+
+conf t 
+! 
+int po11 
+switchport trunk allowed vlan remove {{ vlan_id }} 
+! 
+no vlan {{ vlan_id }} 
+! 
+end 
+wr 
+
+atl1p04n14se01 / 02 
+--------------- 
+
+conf t 
+! 
+no vlan {{ vlan_id }}
+! 
+end 
+wr 
+
+atl1p04n15se01 / 02 
+--------------- 
+
+conf t 
+! 
+no vlan {{ vlan_id }}
+! 
+end 
+wr 
+
+atl1p04n20se01 / 02 
+--------------- 
+
+conf t 
+! 
+no vlan {{ vlan_id }} 
+! 
+end 
+wr 
+
+atl1p04n21se01 / 02 
+--------------- 
+
+conf t 
+! 
+no vlan {{ vlan_id }}
+! 
+end 
+wr 
+
+atl1p04n16se01 / 02 
+--------------- 
+
+conf t 
+! 
+no vlan {{ vlan_id }} 
+! 
+end 
+wr 
+
+atl1p04n18se01 / 02 
+--------------- 
+
+conf t 
+! 
+no vlan {{ vlan_id }}
+! 
+end 
+wr 
+
+
+atl1p04m11ds01 / 02 
+------------------- 
+
+conf t 
+! 
+int po152 
+switchport trunk allowed vlan remove 188 
+! 
+no vlan {{ vlan_id }} 
+! 
+end 
+wr 
+
+atl1p04m11se01 
+--------------- 
+
+conf t 
+! 
+no vlan {{ vlan_id }} 
+! 
+end 
+wr 
+
+atl1p04m10se01 / 02 
+--------------- 
+
+conf t 
+! 
+no vlan {{ vlan_id }} 
+! 
+end 
+wr 
+
+atl1p04m17se01 / 02 
+--------------- 
+
+conf t 
+! 
+no vlan {{ vlan_id }}
+! 
+end 
+wr 
+
+atl1p04m13se01 / 02 
+--------------- 
+
+conf t 
+! 
+no vlan {{ vlan_id }} 
+! 
+end 
+wr 
+
+atl1p04m12se01 / 02 
+--------------- 
+
+conf t 
+! 
+no vlan {{ vlan_id }} 
+! 
+end 
+wr 
+
+atl1p04e17se01 / 02 
+--------------- 
+
+conf t 
+! 
+no vlan {{ vlan_id }} 
+! 
+end 
+wr 
+
+
+xtinp1xrt01: 
+------------ 
+
+rollback 1 
+commit sync comment "Rollback - Add new Build VLAN - Case: {{ sro_number }}" 
+
+xtinp1xrt02: 
+------------ 
+
+rollback 1 
+commit sync comment "Rollback - Add new Build VLAN - Case: {{ sro_number }}" 
+
+xtinp2xrt01: 
+------------ 
+
+rollback 1 
+commit sync comment "Rollback - Add new Build VLAN - Case: {{ sro_number }}" 
+
+xtinp2xrt02: 
+------------ 
+
+rollback 1 
+commit sync comment "Rollback - Add new Build VLAN - Case: {{ sro_number }}" 
+
+xtnvp3xrt01: 
+------------ 
+
+rollback 1 
+commit sync comment "Rollback - Add new Build VLAN - Case: {{ sro_number }}" 
+
+xtnvp3xrt02: 
+------------ 
+
+rollback 1 
+commit sync comment "Rollback - Add new Build VLAN - Case: {{ sro_number }}" 
+
+xtgap4xrt01: 
+------------ 
+
+rollback 1 
+commit sync comment "Rollback - Add new Build VLAN - Case: {{ sro_number }}" 
+
+xtgap4xrt02: 
+------------ 
+
+rollback 1 
+commit sync comment "Rollback - Add new Build VLAN - Case: {{ sro_number }}" 
+
+dfw1enxrt01: 
+------------ 
+
+rollback 1 
+commit sync comment "Rollback - Add new Build VLAN - Case: {{ sro_number }}" 
+
+ord1enexrt01: 
+------------ 
+
+rollback 1 
+commit sync comment "Rollback - Add new Build VLAN - Case: {{ sro_number }}"
