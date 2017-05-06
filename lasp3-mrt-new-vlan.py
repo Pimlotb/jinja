@@ -9,7 +9,7 @@ import jinja2
 # The search path can be used to make finding templates by
 #   relative paths much easier.  In this case, we are using
 #   absolute paths and thus set it to the filesystem root.
-templateLoader = jinja2.FileSystemLoader( searchpath="templates/" )
+templateLoader = jinja2.FileSystemLoader( searchpath="template/" )
 
 # An environment provides the data necessary to read and
 #   parse our templates.  We pass in the loader object here.
